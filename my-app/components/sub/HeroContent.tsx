@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroContent = () => {
     return (
@@ -44,7 +45,7 @@ const HeroContent = () => {
 
                 <motion.button
                     variants={slideInFromLeft(1)}
-                    className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+                    className="py-4 px-4 button-primary bg-blue-500 text-center text-white cursor-pointer rounded-lg max-w-[200px]"
                 >
                     Learn More!
                 </motion.button>
@@ -60,6 +61,30 @@ const HeroContent = () => {
                     height={650}
                     width={650}
                 />
+            <Link href="https://elsamaninfo.wordpress.com" target="_blank">
+                <div className="fixed bottom-1 right-1">
+                <Image 
+                    src="/NasserPicture.png"
+                    alt="Description"
+                    
+                    width={50}
+                    height={50}
+                    className="rounded-lg shadow-lg cursor-pointer"
+                />
+                </div>
+            </Link>
+            <Link href="https://elsamaninfo.wordpress.com" target="_blank">
+                <div className="w-80 h-30 flex bottom-13 left-13">
+                <Image 
+                    src="/NasserPicture.png"
+                    alt="Description"
+                    
+                    width={70}
+                    height={70}
+                    className="rounded-lg shadow-lg cursor-pointer"
+                />
+                </div>
+            </Link>
             </motion.div>
         </motion.div>
     );
